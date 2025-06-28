@@ -103,11 +103,11 @@ Descrição: Retorna o status da aplicação e a hora atual.
 
 -POST /echo
 Descrição: Recebe um JSON e o retorna como resposta.
-![alt text](image-2.png)
+![Image of Build Successful Output](docs/images/image-2.png)
 
 -GET /saudacao/{nome}
 Descrição: Retorna uma mensagem de saudação personalizada.
-![alt text](image-4.png)
+![Image of Build Successful Output](docs/images/image-4.png)
 
 
 ENDPOINTS DE USUARIO(CRUD)
@@ -121,7 +121,7 @@ ENDPOINTS DE USUARIO(CRUD)
 
 -POST /usuarios
 Descrição: Cria um novo usuário.
-![alt text](image-6.png)
+![Image of Build Successful Output](docs/images/image-6.png)
 
 Erros:
 400 Bad Request: "Email é obrigatório" (se email for nulo/vazio).
@@ -130,17 +130,17 @@ Erros:
 
 -GET /usuarios
 Descrição: Lista todos os usuários cadastrados.
-![alt text](image-5.png)
+![Image of Build Successful Output](docs/images/image-5.png)
 
 -GET /usuarios/{email}
 Descrição: Busca um usuário pelo email.
-![alt text](image-7.png)
+![Image of Build Successful Output](docs/images/image-7.png)
 
 Erro (404 Not Found): "Usuário não encontrado" (se o email não existir).
 
 -PUT /usuarios/{email}
 Descrição: Atualiza completamente um usuário existente. O email no path deve corresponder ao email no corpo, ou o email no corpo se tornará o novo email do usuário.
-![alt text](image-8.png)
+![Image of Build Successful Output](docs/images/image-8.png)
 Resposta (200 OK): Retorna o JSON do usuário atualizado.
 
 Erros:
@@ -151,7 +151,7 @@ Erros:
 
 DELETE /usuarios/{email}
 Descrição: Exclui um usuário pelo email.
-![alt text](image-9.png)
+![Image of Build Successful Output](docs/images/image-9.png)
 Erro (404 Not Found): "Usuário não encontrado para exclusão."
 
 ENDPOINTS DE TAREFAS (CRUD)
@@ -166,7 +166,7 @@ Modelo Tarefa:
 
 -POST /tarefas
 Descrição: Cria uma nova tarefa. O id é gerado automaticamente.
-![alt text](image-10.png)
+![Image of Build Successful Output](docs/images/image-10.png)
 Resposta (201 Created): Retorna o JSON da tarefa criada (com id gerado).
 
 Erros:
@@ -175,11 +175,11 @@ Erros:
 
 -GET /tarefas
 Descrição: Lista todas as tarefas cadastradas.
-![alt text](image-11.png)
+![Image of Build Successful Output](docs/images/image-11.png)
 
 -GET /tarefas/{id}
 Descrição: Busca uma tarefa pelo ID.
-![alt text](image-12.png)
+![Image of Build Successful Output](docs/images/image-12.png)
 Resposta (200 OK): Retorna o JSON da tarefa encontrada.
 
 Erros:
@@ -188,7 +188,7 @@ Erros:
 
 -PUT /tarefas/{id}
 Descrição: Atualiza completamente uma tarefa existente pelo ID.
-![alt text](image-13.png)
+![Image of Build Successful Output](docs/images/image-13.png)
 Resposta (200 OK): Retorna o JSON da tarefa atualizada.
 
 Erros:
@@ -199,7 +199,7 @@ Erros:
 
 - DELETE /tarefas/{id}
 Descrição: Exclui uma tarefa pelo ID.
-![alt text](image-14.png)
+![Image of Build Successful Output](docs/images/image-14.png)
 
 Erros:
 400 Bad Request: "ID inválido" (se o ID no path não for um número).
