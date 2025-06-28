@@ -18,30 +18,31 @@ ESTRUTURA DO PROJETO
 O projeto segue uma arquitetura modular, baseada em princípios de separação de responsabilidades (Model-Service-Controller), para garantir maior organização, manutenibilidade e testabilidade.
 
 novo_at1/
-|-- build.gradle.kts          # Configurações do Gradle e dependências
-|-- src/
-|   |-- main/
-|   |   |-- java/
-|   |       -- app/
-|   |           |-- App.java          # Classe principal da aplicação (configura o Javalin e registra os controllers)
-|   |           |-- client/           # Pacote para o cliente Java que consome a API
-|   |           |      |-- ApiClient.java
-|   |           |-- controller/       # Pacote para os controladores (endpoints HTTP)
-|   |           |      |-- TarefaController.java
-|   |           |      |-- UsuarioController.java
-|   |           |-- model/            # Pacote para os modelos de dados (POJOs)
-|   |           |     |-- Tarefa.java
-|   |           |     |-- Usuario.java
-|   |           |-- service/          # Pacote para as lógicas de negócio e manipulação de dados
-|   |                 |-- TarefaService.java
-|   |                 |-- UsuarioService.java
-|   |-- test/
-|         |-- java/
-|               |-- app/
-|                     |-- AppTest.java      # Classe de testes unitários
-|-- docs/                                   # Pasta para documentação e imagens
-|     |-- images/                           # Subpasta para armazenar os prints de tela
-|-- README.md                               # Este arquivo!
+├── build.gradle.kts          # Configurações do Gradle e dependências
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── app/
+│   │           ├── App.java          # Classe principal da aplicação (configura o Javalin e registra os controllers)
+│   │           ├── client/           # Pacote para o cliente Java que consome a API
+│   │           │   └── ApiClient.java
+│   │           ├── controller/       # Pacote para os controladores (endpoints HTTP)
+│   │           │   ├── TarefaController.java
+│   │           │   └── UsuarioController.java
+│   │           ├── model/            # Pacote para os modelos de dados (POJOs)
+│   │           │   ├── Tarefa.java
+│   │           │   └── Usuario.java
+│   │           └── service/          # Pacote para as lógicas de negócio e manipulação de dados
+│   │               ├── TarefaService.java
+│   │               └── UsuarioService.java
+│   └── test/
+│       └── java/
+│           └── app/
+│               └── AppTest.java      # Classe de testes unitários
+├── docs/                     # Pasta para documentação e imagens
+│   └── images/               # Subpasta para armazenar os prints de tela
+└── README.md                 # Este arquivo!
+
 
 Como Rodar o Projeto
 Pré-requisitos: 
