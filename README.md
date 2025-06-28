@@ -94,7 +94,7 @@ A API expõe os seguintes endpoints, CRUD completo, para Usuários e Tarefas:
 -- Endpoints Gerais --
 -GET /hello
 Descrição: Retorna uma mensagem de saudação simples.
-(docs/images/build_image-3.png)
+![Image of Build Successful Output](docs/images/build_successful.png)
 
 -GET /status
 Descrição: Retorna o status da aplicação e a hora atual.
