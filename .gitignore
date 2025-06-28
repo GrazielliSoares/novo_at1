@@ -1,0 +1,31 @@
+# Ignorar arquivos e diretórios gerados pelo Gradle
+.gradle/
+/build/
+.idea/
+*.iml
+*.ipr
+*.iws
+# Ignorar logs, caches e outros temporários
+*.log
+*.class
+# Ignorar arquivos de execução
+.gradle-tooling/
+.project
+.settings/
+.classpath
+bin/
+# Ignorar arquivos do ambiente Java
+*.jar
+*.war
+*.zip
+*.tar.gz
+# Ignorar quaisquer arquivos .env ou de configurações sensíveis
+.env
+.env.*
+*.properties
+# macOS specific
+.DS_Store
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
